@@ -147,7 +147,7 @@ a {
 
 /* ============Hero============ */
 .hero {
-    padding: calc(50px - 12px);
+    padding-top: calc(50px - 12px);
     /* -12px la do padding-bottom va khoi header 12px */
     height: calc(100vh - 112px);
 }
@@ -362,13 +362,12 @@ a {
 
 /* ================Features ================ */
 .features {
-    margin: 65px;
+    margin-top: 65px;
     padding: 65px 0;
 }
 
 .features .main-content {
-    width: 1024px;
-    margin-left: 0;
+    padding-right: 146px;
 }
 
 .features .label,
