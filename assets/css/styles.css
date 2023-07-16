@@ -111,6 +111,19 @@ a {
     font-weight: 400;
 }
 
+.header .sign-in-cta:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.header .sign-in-cta::before {
+    content: attr(title);
+    display: block;
+    font-weight: 600;
+    height: 0;
+    visibility: hidden;
+}
+
 .header-body .sign-up-cta {
     /* Center text in button */
     display: flex;
@@ -132,12 +145,12 @@ a {
     background-color: var(--primary-color);
 }
 
-/* ==========Hero================= */
+/* ============Hero============ */
 .hero {
     padding: calc(50px - 12px);
     /* -12px la do padding-bottom va khoi header 12px */
     height: calc(100vh - 112px);
-    /* background-color: orange; */
+    background-color: orange;
 }
 
 .hero .body {
@@ -302,7 +315,7 @@ a {
     position: absolute;
     bottom: 41px;
     right: 45px;
-    
+
     padding: 17px 35px;
     width: 207px;
     height: 90px;
@@ -338,4 +351,62 @@ a {
     color: #fff;
     font-size: 1rem;
     font-weight: 500;
+}
+
+/* ================Features ================ */
+.features {
+    margin: 65px;
+    padding: 65px 0;
+}
+
+.features .main-content {
+    width: 1024px;
+}
+
+.features .label {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.features .row-top .heading {
+    margin-top: 18px;
+    width: 557px;
+    max-width: 100%;
+
+    color: #0d1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.33; /* 133.333% */
+}
+
+.features .row-top .desc {
+    margin-top: 18px;
+    width: 590px;
+    max-width: 100%;
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.features-list {
+    margin-top: 80px;
+    display: flex;
+    gap: 209px;
+}
+
+.features-list .title {
+    margin-top: 26px;
+    color: #0d1111;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.features-list .desc {
+    margin-top: 16px;
+    color: #9da6a5;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.68; /* 168.75% */
 }
