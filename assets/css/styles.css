@@ -150,7 +150,6 @@ a {
     padding: calc(50px - 12px);
     /* -12px la do padding-bottom va khoi header 12px */
     height: calc(100vh - 112px);
-    background-color: orange;
 }
 
 .hero .body {
@@ -159,6 +158,14 @@ a {
 
 .hero .content-left {
     width: 43%;
+
+    /* Cach 1 */
+    margin: auto 0;
+
+    /* Cach 2 */
+    /* display:flex;
+    justify-content:center;
+    flex-direction:column; */
 }
 
 .hero .content-left .desc-top {
@@ -361,9 +368,11 @@ a {
 
 .features .main-content {
     width: 1024px;
+    margin-left: 0;
 }
 
-.features .label {
+.features .label,
+.popular .label {
     color: #767e7e;
     font-size: 1.2rem;
     font-weight: 700;
@@ -409,4 +418,146 @@ a {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.68; /* 168.75% */
+}
+
+/* =============Popular================ */
+.popular {
+    padding: 65px 0 171px;
+    margin-top: 65px;
+}
+
+.popular .heading {
+    width: 356px;
+    max-width: 100%;
+
+    margin-top: 18px;
+    color: #0d1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+
+.popular .row-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 19px;
+}
+
+.popular .row-top .desc {
+    width: 525px;
+    max-width: 100%;
+
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.77; /* 177.778% */
+}
+
+.popular .row-top .link {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.popular-list {
+    display: flex;
+    gap: 47px;
+    margin-top: 79px;
+}
+
+.popular-list .item {
+    position: relative;
+
+    width: 33.3%;
+
+    /* Center info in Item */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popular-list .item:hover .thumb{
+    opacity: 1;
+}
+
+.popular-list .thumb {
+    width: 100%;
+    height: 393px;
+    object-fit: cover;
+    border-radius: 8px;
+
+    opacity: 0.5;
+}
+
+.popular-list .info {
+    position: absolute;
+    top: 322px;
+
+    width: 90%;
+    padding: 18px 25px 29px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 2px solid transparent;
+}
+
+.popular-list .info:hover {
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-color);
+}
+
+.popular-list .title {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.popular-list .desc,
+.popular-list .classes,
+.popular-list .time {
+    margin-top: 10px;
+    color: #9da6a5;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.popular-list .price {
+    margin-top: 16px;
+    font-size: 1.6rem;
+}
+
+.popular-list strong {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.popular-list .sub-info {
+    display: flex;
+    margin-top: 18px;
+}
+
+.popular-list .classes {
+    margin-left: 16px;
+    margin-right: 26px;
+}
+
+.popular-list .classes, .popular-list .time {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.popular-list .classes::before,
+.popular-list .time::before {
+    position: absolute;
+    left: -15px;
+
+    display: inline-block;
+    content: "";
+
+    width: 6px;
+    height: 6px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
 }
