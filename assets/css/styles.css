@@ -29,7 +29,7 @@ a {
 
 .btn {
     display: inline-block;
-    padding: 26px 12px;
+    padding: 25px 12px;
     border-radius: 14px;
 
     min-width: 186px;
@@ -200,8 +200,8 @@ a {
 .hero .hero-cta:hover {
     color: var(--primary-color);
     background-color: white;
-    border: 1px solid var(--primary-color);
-    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.1);
+    padding: 23px 12px;
+    border: 2px solid var(--primary-color);
 }
 
 .hero .content-left button {
@@ -602,6 +602,7 @@ a {
 
 .about .body {
     display: flex;
+    align-items: center;
 }
 
 .about .left-content {
@@ -720,4 +721,41 @@ a {
     right: 32px;
     width: 78px;
     height: 78px;
+}
+
+/* ==========Admit============ */
+.admit {
+    margin-top: 65px;
+    padding: 76px 0 86px;
+    background-color: #DEF6F5;
+}
+
+.admit .row {
+    display: flex;
+    gap: 410px;
+    align-items: center;
+}
+
+.admit .content {
+    max-width: 100%;
+}
+
+.admit .heading {
+    color: #070707;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+
+.admit .desc {
+    margin-top: 18px;
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.admit .admit-cta:hover {
+    color: var(--primary-color);
+    padding: 23px 12px;
+    border: 2px solid var(--primary-color);
+    background-color: white;
 }
