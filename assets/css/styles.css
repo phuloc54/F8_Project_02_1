@@ -727,7 +727,7 @@ a {
 .admit {
     margin-top: 65px;
     padding: 76px 0 86px;
-    background-color: #DEF6F5;
+    background-color: #def6f5;
 }
 
 .admit .row {
@@ -758,4 +758,48 @@ a {
     padding: 23px 12px;
     border: 2px solid var(--primary-color);
     background-color: white;
+}
+
+/* ==============Footer============ */
+.footer {
+    margin-top: 65px;
+    padding: 65px 0 50px;
+}
+
+.footer .body {
+    display: flex;
+    gap: 144px;
+}
+
+.footer .title {
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.footer .list {
+    margin-top: 25px;
+}
+
+.footer .item {
+    margin-top: 20px;
+    white-space: nowrap;
+}
+
+.footer .item a {
+    color: #535353;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.footer .item .icon {
+    margin-right: 9px;
+}
+
+.footer .copyright {
+    margin-top: 80px;
+    text-align: center;
+    color: #b0b5b4;
+    font-size: 1.8rem;
+    font-weight: 400;
 }
